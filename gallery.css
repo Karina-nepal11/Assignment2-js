@@ -1,0 +1,136 @@
+/* Reset and Base Styles */
+
+* {
+    margin: 0;
+  
+    padding: 0;
+  
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  
+    max-width: 1200px;
+  
+    margin: 0 auto;
+  
+    padding: 20px;
+  
+    background-color: #f5f5f5;
+  }
+  
+  /* Header Styles */
+  
+  h1 {
+    text-align: center;
+  
+    color: #333;
+  
+    margin-bottom: 30px;
+  }
+  
+  /* Gallery Container */
+  
+  #gallery {
+    max-width: 1200px;
+  
+    margin: 0 auto;
+  
+    padding: 20px;
+  }
+  
+  /* Main Image Figure */
+  
+  figure {
+    background: white;
+  
+    padding: 15px;
+  
+    margin-bottom: 20px;
+  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  
+    border-radius: 5px;
+  }
+  
+  figure img {
+    max-width: 100%;
+  
+    height: auto;
+  
+    display: block;
+  }
+  
+  figcaption {
+    padding: 10px;
+  
+    text-align: center;
+  
+    color: #666;
+  }
+  
+  /* Thumbnail List */
+  
+  ul {
+    list-style: none;
+  
+    padding: 0;
+  
+    margin: 0;
+  
+    display: flex;
+  
+    gap: 10px;
+  
+    flex-wrap: wrap;
+  
+    justify-content: center;
+  }
+  
+  li {
+    cursor: pointer;
+  
+    transition: transform 0.2s ease;
+  }
+  
+  li:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Thumbnail Images */
+  
+  li img {
+    display: block;
+  
+    border: 2px solid transparent;
+  
+    filter: grayscale(100%);
+  
+    transition: all 0.3s ease;
+  }
+  
+  li img.active {
+    filter: grayscale(0%);
+  
+    border-color: #4caf50;
+  }
+  
+  /* Responsive Design */
+  
+  @media (max-width: 768px) {
+    body {
+      padding: 10px;
+    }
+  
+    #gallery ul {
+      gap: 5px;
+    }
+  
+    #gallery li img {
+      width: 120px;
+  
+      height: auto;
+    }
+  }
+  

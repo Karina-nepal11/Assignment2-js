@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery | COMP1073 Client-Side JavaScript</title>
+  <link rel="stylesheet" href="css/gallery.css">
+</head>
+
+<body>
+  <header>
+    <h1>Beautiful Nature Gallery</h1>
+  </header>
+
+  <main>
+    <section id="gallery" aria-label="Image Gallery">
+      <figure>
+        <img src="images/flowers-yellow-large.jpg" alt="Sunflowers in the hamlet Dernekamp" width="1200" height="800"
+          id="featured-image" />
+        <figcaption>Sunflowers in the hamlet Dernekamp, Kirchspiel, Dülmen, Germany</figcaption>
+      </figure>
+
+      <nav aria-label="Gallery Navigation">
+        <ul>
+          <li>
+            <img src="images/flowers-yellow-small.jpg" alt="Sunflowers in the hamlet Dernekamp" width="240" height="160"
+              data-caption="Sunflowers in the hamlet Dernekamp, Kirchspiel, Dülmen, Germany" />
+          </li>
+          <li>
+            <img src="images/flowers-red-small.jpg" alt="Poppies in cornfield" width="240" height="160"
+              data-caption="Poppies in cornfield, Dülmen, North Rhine-Westphalia, Germany" />
+          </li>
+          <li>
+            <img src="images/flowers-white-small.jpg" alt="Daffodils in Sentmaring park" width="240" height="160"
+              data-caption="Daffodils in Sentmaring park, Münster, North Rhine-Westfalia, Germany" />
+          </li>
+          <li>
+            <img src="images/flowers-purple-small.jpg" alt="Sentmaring Park" width="240" height="160"
+              data-caption="Sentmaring Park, Münster, North Rhine-Westphalia, Germany" />
+          </li>
+          <li>
+            <img src="images/flowers-pink-small.jpg" alt="Market in Münster" width="240" height="160"
+              data-caption="Market in Münster, North Rhine-Westphalia, Germany" />
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </main>
+
+  <script src="js/gallery.js"></script>
+</body>
+
+</html>
